@@ -32,13 +32,13 @@ export default function Page() {
             Du denkst, dein Leben ist klar.
           </h1>
 
-          <p style={{
-            fontSize: "24px",
-            color: accent,
-            marginBottom: "25px"
-          }}>
-            Bis ein Moment alles verändert.
-          </p>
+       <p style={{
+  fontSize: "20px",
+  color: "#2f6f57",
+  marginBottom: "10px"
+}}>
+  Bis ein Moment alles verändert.
+</p>
 
           <p style={{ color: "#777", fontSize: "18px" }}>
             Und plötzlich merkst du:
@@ -47,14 +47,37 @@ export default function Page() {
           </p>
 
           {/* HANDSCHRIFT */}
-          <p style={{
-            fontFamily: "cursive",
-            fontSize: "20px",
-            marginTop: "30px",
-            color: accent
-          }}>
-            Es beginnt oft leise.
-          </p>
+<p style={{
+  marginTop: "40px",
+  fontSize: "20px",
+  fontStyle: "italic",
+  color: "#2f6f57"
+}}>
+  Es beginnt oft leise.
+</p>
+          <a
+  href="mailto:DEINEEMAIL@DOMAIN.DE?subject=Gespräch%20Einfach%20Leben"
+  style={{
+    display: "inline-block",
+    marginTop: "40px",
+    padding: "16px 28px",
+    background: "#2f6f57",
+    color: "white",
+    borderRadius: "6px",
+    textDecoration: "none",
+    fontSize: "16px",
+    fontWeight: "500"
+  }}
+>
+  Jetzt Klarheit gewinnen
+</a>
+<p style={{
+  marginTop: "15px",
+  fontSize: "14px",
+  color: "#888"
+}}>
+  unverbindlich · vertraulich
+</p>
 
         </div>
       </section>
@@ -125,7 +148,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* CTA */}
+{/* CTA */}
 <section style={{
   padding: "140px 20px",
   background: "#222",
@@ -136,11 +159,11 @@ export default function Page() {
 
     <h2 style={{
       marginBottom: "25px",
-      fontSize: "34px",
+      fontSize: "32px",
       fontWeight: "500",
       lineHeight: 1.3
     }}>
-      Verstehen, bevor es wirkt
+      Finde heraus, was deine Situation wirklich bedeutet
     </h2>
 
     <p style={{
@@ -148,34 +171,31 @@ export default function Page() {
       color: "#bbb",
       fontSize: "18px"
     }}>
-      Ein Gespräch reicht oft aus,
-      um Klarheit über die nächsten Schritte zu bekommen.
+      Ein Gespräch reicht oft aus, um Klarheit über die nächsten Schritte zu bekommen.
     </p>
 
     <a
-      href="mailto:siebert@s380.de?subject=Gespräch%20Einfach%20Leben"
+      href="mailto:DEINEEMAIL@DOMAIN.DE?subject=Gespräch%20Einfach%20Leben"
       style={{
         display: "inline-block",
         padding: "18px 36px",
-        background: accent,
+        background: "#2f6f57",
         color: "white",
         borderRadius: "8px",
         textDecoration: "none",
         fontSize: "17px",
-        fontWeight: "500",
-        letterSpacing: "0.3px"
+        fontWeight: "500"
       }}
     >
-      Gespräch starten
+      Gespräch vereinbaren
     </a>
 
-    {/* ruhiger Zusatz für Vertrauen */}
     <p style={{
       marginTop: "30px",
       fontSize: "14px",
       color: "#888"
     }}>
-      unverbindlich · vertraulich
+      unverbindlich · vertraulich · ohne Vorbereitung
     </p>
 
   </div>
