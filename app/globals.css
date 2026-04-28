@@ -50,6 +50,23 @@ body {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
 }
 
+  /* 👇Button für die Zielgruppe button */
+.cta-small {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: #2f6f57;
+  border: 1px solid #2f6f57;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cta-small:hover {
+  background: #2f6f57;
+  color: white;
+}
 /* DARK MODE FIX */
 @media (prefers-color-scheme: dark) {
   body {
