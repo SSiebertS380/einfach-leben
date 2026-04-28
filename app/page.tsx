@@ -55,21 +55,11 @@ export default function Page() {
 }}>
   Es beginnt oft leise.
 </p>
-          <a
-  href="mailto:DEINEEMAIL@DOMAIN.DE?subject=Gespräch%20Einfach%20Leben"
-  style={{
-    display: "inline-block",
-    marginTop: "40px",
-    padding: "16px 28px",
-    background: "#2f6f57",
-    color: "white",
-    borderRadius: "6px",
-    textDecoration: "none",
-    fontSize: "16px",
-    fontWeight: "500"
-  }}
+<a
+  href="mailto:siebert@s380.de?subject=Gespräch%20Einfach%20Leben"
+  className="cta-button"
 >
-  Jetzt Klarheit gewinnen
+  In 30 Minuten Klarheit bekommen
 </a>
 <p style={{
   marginTop: "15px",
@@ -157,47 +147,54 @@ export default function Page() {
 }}>
   <div style={{ maxWidth: "700px", margin: "0 auto" }}>
 
-    <h2 style={{
-      marginBottom: "25px",
-      fontSize: "32px",
-      fontWeight: "500",
-      lineHeight: 1.3
-    }}>
-      Finde heraus, was deine Situation wirklich bedeutet
-    </h2>
+ <h2
+  style={{
+    marginBottom: "25px",
+    fontSize: "32px",
+    fontWeight: "500",
+    lineHeight: 1.3,
+  }}
+>
+  Was deine Entscheidung{" "}
+  <span style={{ color: "#7fd1a8", fontWeight: 600 }}>
+    wirklich
+  </span>
+  <br />
+  für dich bedeutet
+</h2>
 
     <p style={{
       marginBottom: "50px",
       color: "#bbb",
       fontSize: "18px"
     }}>
-      Ein Gespräch reicht oft aus, um Klarheit über die nächsten Schritte zu bekommen.
+      In einem Gespräch wird sichtbar, was sich gerade entwickelt – und was es für dich heißt.
     </p>
 
-    <a
-      href="mailto:DEINEEMAIL@DOMAIN.DE?subject=Gespräch%20Einfach%20Leben"
-      style={{
-        display: "inline-block",
-        padding: "18px 36px",
-        background: "#2f6f57",
-        color: "white",
-        borderRadius: "8px",
-        textDecoration: "none",
-        fontSize: "17px",
-        fontWeight: "500"
-      }}
-    >
-      Gespräch vereinbaren
-    </a>
+ <a
+  href="mailto:siebert@s380.de?subject=Gespräch%20Einfach%20Leben"
+  className="cta-button"
+  style={{ marginTop: "50px" }}
+>
+  Jetzt Klarheit für deine Situation bekommen
+</a>
 
-    <p style={{
-      marginTop: "30px",
-      fontSize: "14px",
-      color: "#888"
-    }}>
-      unverbindlich · vertraulich · ohne Vorbereitung
-    </p>
+<p style={{
+  marginTop: "12px",
+  fontSize: "14px",
+  color: "#888"
+}}>
+unverbindlich · vertraulich · ohne Vorbereitung
+</p>
 
+ <p style={{
+  marginTop: "25px",
+  fontSize: "15px",
+  color: "#aaa"
+}}>
+  Ich begleite seit über 20 Jahren finanzielle Entscheidungen – und sehe,
+  was sie wirklich auslösen.
+</p>
   </div>
 </section>
 
