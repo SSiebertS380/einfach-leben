@@ -46,17 +46,19 @@ export default function RootLayout({
           </a>
 
           {/* RECHTS: NAV */}
-          <div style={{ display: "flex", gap: "20px" }}>
-            <a href="/" style={{ textDecoration: "none", color: "#111" }}>
-              Einfach Leben
-            </a>
-            <a href="#" style={{ textDecoration: "none", color: "#111" }}>
-              Über mich
-            </a>
-            <a href="#" style={{ textDecoration: "none", color: "#111" }}>
-              Kontakt
-            </a>
-          </div>
+<div style={{ display: "flex", gap: "20px" }}>
+  <a href="/" style={{ textDecoration: "none", color: "#111" }}>
+    Einfach Leben
+  </a>
+
+  <a href="/ueber-mich" style={{ textDecoration: "none", color: "#111" }}>
+    Über mich
+  </a>
+
+  <a href="/kontakt" style={{ textDecoration: "none", color: "#111" }}>
+    Kontakt
+  </a>
+</div>
         </nav>
 
         {/* CONTENT */}

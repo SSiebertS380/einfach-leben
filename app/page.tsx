@@ -6,7 +6,11 @@ export default function Page() {
       {/* HERO */}
       <section style={{ padding: "150px 20px 100px", textAlign: "center" }}>
         <div style={{ maxWidth: "700px", margin: "0 auto" }}>
-          <img src="/images/hero.jpg" alt="Paar in emotionaler Distanz" style={{ width: "100%", marginBottom: "60px" }} />
+          <img
+            src="/images/hero.jpg"
+            alt="Paar in emotionaler Distanz"
+            style={{ width: "100%", marginBottom: "60px" }}
+          />
 
           <h1 style={{ fontSize: "54px", fontWeight: 500, marginBottom: "30px", lineHeight: 1.2 }}>
             Du denkst, dein Leben ist klar.
@@ -17,8 +21,8 @@ export default function Page() {
           </p>
 
           <p style={{ color: "#777", fontSize: "18px" }}>
-            Und plötzlich merkst du: Es geht nicht nur um dein Leben.
-            Sondern auch um dein Geld.
+            Und plötzlich merkst du: Es geht nicht nur um dein Leben –
+            sondern auch um dein Geld.
           </p>
 
           <p style={{ marginTop: "40px", fontSize: "20px", fontStyle: "italic", color: accent }}>
@@ -41,6 +45,7 @@ export default function Page() {
           <p style={{ fontSize: "28px", lineHeight: 1.35 }}>
             Die meisten Menschen verstehen nicht, was Entscheidungen wie Heirat oder Trennung wirklich auslösen.
           </p>
+
           <p style={{ fontSize: "18px", color: "#555", marginTop: "30px" }}>
             Nicht, weil sie unvernünftig entscheiden. Sondern weil die finanziellen Wirkungen oft erst später sichtbar werden.
           </p>
@@ -140,6 +145,14 @@ export default function Page() {
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "30px" }}>
             <div>
+              <h3>In der Trennung</h3>
+              <p>Für Menschen, die verstehen wollen, was gerade wirkt und welche Fragen jetzt wichtig werden.</p>
+              <a href="mailto:siebert@s380.de?subject=Einordnung%20zur%20Trennung" className="cta-small">
+                Einordnung zur Trennung
+              </a>
+            </div>
+
+            <div>
               <h3>Vor der Hochzeit</h3>
               <p>Für Paare, die verstehen wollen, welche finanziellen Wirkungen mit der Ehe entstehen.</p>
               <a href="mailto:siebert@s380.de?subject=Einordnung%20zur%20Hochzeit" className="cta-small">
@@ -156,17 +169,9 @@ export default function Page() {
             </div>
 
             <div>
-              <h3>In der Trennung</h3>
-              <p>Für Menschen, die verstehen wollen, was gerade wirkt und welche Fragen jetzt wichtig werden.</p>
-              <a href="mailto:siebert@s380.de?subject=Einordnung%20zur%20Trennung" className="cta-small">
-                Einordnung zur Trennung
-              </a>
-            </div>
-
-            <div>
               <h3>Als Geschenk</h3>
               <p>Für Freunde oder Familie, die einem Paar etwas Sinnvolles zur Hochzeit mitgeben möchten.</p>
-              <a href="mailto:siebert@s380.de?subject=Einordnung%20als%20Geschenk" className="cta-small">
+              <a href="mailto:siebert@s380.de?subject=Anfrage%20als%20Geschenk" className="cta-small">
                 Als Geschenk anfragen
               </a>
             </div>
@@ -182,7 +187,6 @@ export default function Page() {
           </h2>
 
           <p>Du schilderst kurz deine Situation.</p>
-
           <p>Ich gebe dir eine erste strukturierte Einordnung:</p>
 
           <ul style={{ marginTop: "20px", marginBottom: "25px", paddingLeft: "22px" }}>
