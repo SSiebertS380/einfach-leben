@@ -90,11 +90,34 @@ export default function Page() {
             src={`/images/${item.img}`}
             style={{ width: "100%", marginBottom: "18px" }}
           />
-          <p style={{ color: "#2f6f57", fontSize: "14px", marginBottom: "8px" }}>
-            {item.nr}
+
+          {/* Zahl + Titel */}
+          <div style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "10px",
+            marginBottom: "8px"
+          }}>
+            <span style={{
+              fontSize: "20px",
+              fontWeight: 700,
+              color: "#2f6f57"
+            }}>
+              {item.nr}
+            </span>
+
+            <h3 style={{
+              margin: 0,
+              fontWeight: 600,
+              color: "#2f6f57"
+            }}>
+              {item.title}
+            </h3>
+          </div>
+
+          <p style={{ marginTop: "6px" }}>
+            {item.text}
           </p>
-          <h3 style={{ marginBottom: "10px" }}>{item.title}</h3>
-          <p>{item.text}</p>
         </div>
       ))}
 
@@ -102,7 +125,6 @@ export default function Page() {
 
   </div>
 </section>
-
 
       {/* ERKLÄRUNG */}
       <section style={{ padding: "80px 20px" }}>
