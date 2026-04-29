@@ -80,45 +80,52 @@ export default function Page() {
     <div className="timeline-grid">
 
       {[
-        { nr: "I", title: "Anfang", text: "Alles fühlt sich klar an.", img: "phase1.jpg" },
+        { img: "phase1.jpg", nr: "I", title: "Anfang", text: "Alles fühlt sich klar an." },
         { img: "phase2.jpg", nr: "II", title: "Aufbau", text: "Gemeinsam etwas aufbauen." },
         { img: "phase3.jpg", nr: "III", title: "Veränderung", text: "Fragen entstehen oft leise." },
         { img: "phase4.jpg", nr: "IV", title: "Klärung", text: "Und plötzlich wird es konkret." },
       ].map((item, i) => (
-        <div key={i}>
-          <img
-            src={`/images/${item.img}`}
-            style={{ width: "100%", marginBottom: "18px" }}
-          />
+<div key={i}>
 
-          {/* Zahl + Titel */}
-          <div style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "10px",
-            marginBottom: "8px"
-          }}>
-            <span style={{
-              fontSize: "20px",
-              fontWeight: 700,
-              color: "#2f6f57"
-            }}>
-              {item.nr}
-            </span>
+  {/* Zahl + Titel */}
+  <div style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+    marginBottom: "10px"
+  }}>
+    <span style={{
+      fontSize: "20px",
+      fontWeight: 700,
+      color: "#2f6f57"
+    }}>
+      {item.nr}
+    </span>
 
-            <h3 style={{
-              margin: 0,
-              fontWeight: 600,
-              color: "#2f6f57"
-            }}>
-              {item.title}
-            </h3>
-          </div>
+    <h3 style={{
+      margin: 0,
+      fontWeight: 600,
+      color: "#2f6f57"
+    }}>
+      {item.title}
+    </h3>
+  </div>
 
-          <p style={{ marginTop: "6px" }}>
-            {item.text}
-          </p>
-        </div>
+  {/* Bild */}
+  <img
+    src={`/images/${item.img}`}
+    style={{
+      width: "100%",
+      marginBottom: "15px"
+    }}
+  />
+
+  {/* Text */}
+  <p>
+    {item.text}
+  </p>
+
+</div>
       ))}
 
     </div>
