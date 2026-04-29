@@ -152,44 +152,105 @@ export default function Page() {
       </section>
 
       {/* KONKRET */}
-      <section style={{ padding: "80px 20px", background: "#f7f7f2" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "34px", fontWeight: 500, marginBottom: "30px", lineHeight: 1.3 }}>
-            Was du konkret bekommst
-          </h2>
+<section style={{ padding: "90px 20px", background: "#f7f7f2" }}>
+  <div style={{ maxWidth: "900px", margin: "0 auto" }}>
 
-          <p style={{ fontSize: "18px", color: "#555", marginBottom: "40px" }}>
-            Eine erste Einordnung, welche Fragen in deiner Situation wirklich relevant sind.
+    <h2 style={{
+      fontSize: "34px",
+      fontWeight: 500,
+      marginBottom: "20px",
+      lineHeight: 1.3,
+      textAlign: "center"
+    }}>
+      Was sich durch Ehe und Trennung verändert
+    </h2>
+
+    <p style={{
+      textAlign: "center",
+      fontSize: "18px",
+      color: "#555",
+      marginBottom: "25px",
+      maxWidth: "680px",
+      marginLeft: "auto",
+      marginRight: "auto"
+    }}>
+      Vor der Ehe ist vieles klar zugeordnet.
+    </p>
+
+    <p style={{
+      textAlign: "center",
+      fontSize: "22px",
+      fontWeight: 500,
+      color: "#2f6f57",
+      marginBottom: "60px",
+      maxWidth: "680px",
+      marginLeft: "auto",
+      marginRight: "auto"
+    }}>
+      Mit der Ehe wird aus „dein“ plötzlich „euer“.
+    </p>
+
+    <div style={{
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: "25px"
+    }}>
+
+      {[
+        {
+          title: "Einkommen",
+          text: "Was vorher dein Einkommen war, wird plötzlich Teil eines gemeinsamen Systems."
+        },
+        {
+          title: "Vermögen",
+          text: "Was war schon vorher da – was entsteht gemeinsam – und wie wird es betrachtet?"
+        },
+        {
+          title: "Rente",
+          text: "Welche Ansprüche entstehen über die Zeit – auch wenn man sie heute kaum sieht?"
+        },
+        {
+          title: "Hausrat",
+          text: "Was wird gemeinsam genutzt – und was passiert damit, wenn getrennt wird?"
+        },
+        {
+          title: "Unterhalt & Verantwortung",
+          text: "Welche Verpflichtungen entstehen – und wie wirken sie sich auf beide Seiten aus?"
+        }
+      ].map((item, i) => (
+        <div
+          key={i}
+          style={{
+            padding: "24px",
+            borderRadius: "14px",
+            background: "#fff",
+            border: "1px solid #e0e0da",
+            boxShadow: "0 10px 25px rgba(0,0,0,0.04)"
+          }}
+        >
+          <h3 style={{
+            marginBottom: "10px",
+            fontWeight: 700,
+            color: "#2f6f57",
+            fontSize: "18px"
+          }}>
+            {item.title}
+          </h3>
+
+          <p style={{
+            color: "#555",
+            fontSize: "16px",
+            lineHeight: 1.45
+          }}>
+            {item.text}
           </p>
-
-          <div style={{ display: "grid", gap: "26px" }}>
-            <div>
-              <h3>Was passiert mit dem Einkommen?</h3>
-              <p>Wie verändert sich, was Dir monatlich wirklich zur Verfügung steht?</p>
-            </div>
-
-            <div>
-              <h3>Was passiert mit dem Vermögen?</h3>
-              <p>Was war am Anfang schon vorhanden - Was wurde gemeinsam aufgebaut – und wie wird es betrachtet?</p>
-            </div>
-
-            <div>
-              <h3>Was passiert mit der Rente?</h3>
-              <p>Welche Ansprüche entstehen oder verändern sich langfristig?</p>
-            </div>
-
-            <div>
-              <h3>Was passiert mit dem Hausrat?</h3>
-              <p>Was ist gemeinsam genutzt – und wie wird damit praktisch umgegangen?</p>
-            </div>
-
-            <div>
-              <h3>Was passiert mit Unterhalt und Verantwortung?</h3>
-              <p>Welche Verpflichtungen entstehen – und wie wirken sie sich aus?</p>
-            </div>
-          </div>
         </div>
-      </section>
+      ))}
+
+    </div>
+
+  </div>
+</section>
 
 {/* ZIELGRUPPEN */}
 <section style={{ padding: "90px 20px", background: "#f7f7f2" }}>
@@ -299,9 +360,9 @@ export default function Page() {
           <p>Ich gebe Dir eine erste strukturierte Einordnung:</p>
 
           <ul style={{ marginTop: "20px", marginBottom: "25px", paddingLeft: "22px" }}>
-            <li>welche Themen wirklich relevant sind</li>
-            <li>wo finanzielle Auswirkungen entstehen können</li>
-            <li>welche Fragen Du als Nächstes klären solltest</li>
+            <li>Welche Themen wirklich relevant sind</li>
+            <li>Wo finanzielle Auswirkungen entstehen können</li>
+            <li>Welche Fragen Du als Nächstes klären solltest</li>
           </ul>
 
           <p>

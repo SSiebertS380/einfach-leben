@@ -3,6 +3,16 @@ export default function Kontakt() {
     <main style={{ padding: "100px 20px", fontFamily: "Georgia, serif" }}>
       <div style={{ maxWidth: "700px", margin: "0 auto", textAlign: "center" }}>
 
+{/* Zurück */}
+        <a href="/" style={{
+          display: "inline-block",
+          marginBottom: "30px",
+          color: "#2f6f57",
+          textDecoration: "none"
+        }}>
+          ← zurück
+        </a>
+
         <h1 style={{ marginBottom: "30px" }}>
           Kontakt
         </h1>
