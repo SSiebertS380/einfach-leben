@@ -85,6 +85,8 @@ export default function Page() {
         { img: "phase3.jpg", nr: "III", title: "Veränderung", text: "Fragen entstehen oft leise." },
         { img: "phase4.jpg", nr: "IV", title: "Klärung", text: "Und plötzlich wird es konkret." },
       ].map((item, i) => (
+
+
 <div key={i}>
 
   {/* Zahl + Titel */}
@@ -125,14 +127,12 @@ export default function Page() {
     {item.text}
   </p>
 
-  {/* Divider (nicht beim letzten Element) */}
-  {i < 3 && (
-    <div style={{
-      marginTop: "20px",
-      height: "1px",
-      background: "#e5e5e0"
-    }} />
-  )}
+  {/* Subtile Linie */}
+  <div style={{
+    marginTop: "20px",
+    height: "1px",
+    background: "rgba(0,0,0,0.08)"
+  }} />
 
 </div>
       ))}
