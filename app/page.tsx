@@ -52,40 +52,71 @@ export default function Page() {
         </div>
       </section>
 
-      {/* LEBENSPHASEN */}
-      <section style={{ padding: "80px 20px", background: "#f7f7f2" }}>
-        <div style={{ maxWidth: "950px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "34px", fontWeight: 500, marginBottom: "20px", textAlign: "center" }}>
-            Lebensphasen verändern Entscheidungen
-          </h2>
+      {/* LEBENSPHASEN / ZEITSTRAHL */}
+<section style={{ padding: "90px 20px", background: "#f7f7f2" }}>
+  <div style={{ maxWidth: "950px", margin: "0 auto" }}>
 
-          <p style={{ textAlign: "center", color: "#555", fontSize: "18px", marginBottom: "60px" }}>
-            Was am Anfang selbstverständlich wirkt, kann später eine ganz andere Bedeutung bekommen.
-          </p>
+    <h2 style={{
+      fontSize: "34px",
+      fontWeight: 500,
+      marginBottom: "20px",
+      textAlign: "center",
+    }}>
+      Lebensphasen verändern Entscheidungen
+    </h2>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "32px" }}>
-            <div>
-              <img src="/images/phase1.jpg" alt="" style={{ width: "100%" }} />
-              <p>Alles fühlt sich klar an.</p>
-            </div>
+    <p style={{
+      textAlign: "center",
+      color: "#555",
+      fontSize: "18px",
+      marginBottom: "70px",
+      maxWidth: "650px",
+      marginLeft: "auto",
+      marginRight: "auto",
+    }}>
+      Was am Anfang selbstverständlich wirkt, kann später eine ganz andere Bedeutung bekommen.
+    </p>
 
-            <div>
-              <img src="/images/phase2.jpg" alt="" style={{ width: "100%" }} />
-              <p>Man baut gemeinsam etwas auf.</p>
-            </div>
+    <div style={{
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr 1fr 1fr",
+      gap: "24px",
+      alignItems: "start",
+    }}>
 
-            <div>
-              <img src="/images/phase3.jpg" alt="" style={{ width: "100%" }} />
-              <p>Fragen entstehen oft leise.</p>
-            </div>
+      <div>
+        <img src="/images/phase1.jpg" alt="Anfang einer gemeinsamen Lebensphase" style={{ width: "100%", marginBottom: "18px" }} />
+        <p style={{ color: "#2f6f57", fontSize: "14px", marginBottom: "8px" }}>01</p>
+        <h3 style={{ marginBottom: "10px" }}>Anfang</h3>
+        <p>Alles fühlt sich klar an.</p>
+      </div>
 
-            <div>
-              <img src="/images/phase4.jpg" alt="" style={{ width: "100%" }} />
-              <p>Und plötzlich wird es konkret.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div>
+        <img src="/images/phase2.jpg" alt="Gemeinsamer Aufbau" style={{ width: "100%", marginBottom: "18px" }} />
+        <p style={{ color: "#2f6f57", fontSize: "14px", marginBottom: "8px" }}>02</p>
+        <h3 style={{ marginBottom: "10px" }}>Aufbau</h3>
+        <p>Gemeinsam etwas aufbauen.</p>
+      </div>
+
+      <div>
+        <img src="/images/phase3.jpg" alt="Fragen entstehen" style={{ width: "100%", marginBottom: "18px" }} />
+        <p style={{ color: "#2f6f57", fontSize: "14px", marginBottom: "8px" }}>03</p>
+        <h3 style={{ marginBottom: "10px" }}>Veränderung</h3>
+        <p>Fragen entstehen oft leise.</p>
+      </div>
+
+      <div>
+        <img src="/images/phase4.jpg" alt="Klärung einer Situation" style={{ width: "100%", marginBottom: "18px" }} />
+        <p style={{ color: "#2f6f57", fontSize: "14px", marginBottom: "8px" }}>04</p>
+        <h3 style={{ marginBottom: "10px" }}>Klärung</h3>
+        <p>Und plötzlich wird es konkret.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 
       {/* ERKLÄRUNG */}
       <section style={{ padding: "80px 20px" }}>
