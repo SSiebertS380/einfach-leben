@@ -1,11 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
 
 export default function Anfrage() {
-  const params = useSearchParams();
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [situation, setSituation] = useState("");
@@ -15,10 +12,15 @@ export default function Anfrage() {
   const [beschreibung, setBeschreibung] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
+  // 👉 URL Parameter auslesen (fix für Vercel Build)
   useEffect(() => {
-    const preset = params.get("situation");
-    if (preset) setSituation(preset);
-  }, [params]);
+    const searchParams = new URLSearchParams(window.location.search);
+    const preset = searchParams.get("situation");
+
+    if (preset) {
+      setSituation(preset);
+    }
+  }, []);
 
   function toggleThema(thema: string) {
     setThemen((aktuell) =>
@@ -55,7 +57,7 @@ ${name}`
     <main style={{ padding: "100px 20px", fontFamily: "Georgia, serif" }}>
       <div style={{ maxWidth: "700px", margin: "0 auto" }}>
 
-        {/* 🔙 ZURÜCK */}
+        {/* Zurück */}
         <a href="/" style={{
           display: "inline-block",
           marginBottom: "30px",
@@ -67,20 +69,36 @@ ${name}`
 
         <h1 style={{ marginBottom: "30px" }}>
           Anfrage starten
-        </h1> 
+        </h1>
 
         <p style={{ marginBottom: "40px", color: "#555" }}>
-          Beantworte ein paar Fragen. Daraus entsteht eine strukturierte Anfrage.
+          Beantworte ein paar Fragen. Daraus entsteht eine strukturierte Anfrage,
+          damit ich deine Situation besser einordnen kann.
         </p>
 
+        {/* Name */}
         <label>Name</label>
-        <input value={name} onChange={(e) => setName(e.target.value)} style={inputStyle} />
+        <input
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          style={inputStyle}
+        />
 
+        {/* Email */}
         <label>E-Mail</label>
-        <input value={email} onChange={(e) => setEmail(e.target.value)} style={inputStyle} />
+        <input
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          style={inputStyle}
+        />
 
+        {/* Situation */}
         <label>Worum geht es?</label>
-        <select value={situation} onChange={(e) => setSituation(e.target.value)} style={inputStyle}>
+        <select
+          value={situation}
+          onChange={(e) => setSituation(e.target.value)}
+          style={inputStyle}
+        >
           <option value="">Bitte auswählen</option>
           <option>Trennung</option>
           <option>Hochzeit</option>
@@ -88,7 +106,10 @@ ${name}`
           <option>Geschenk</option>
         </select>
 
-        <p style={{ marginTop: "30px" }}>Welche Themen betreffen dich?</p>
+        {/* Themen */}
+        <p style={{ marginTop: "30px" }}>
+          Welche Themen betreffen dich?
+        </p>
 
         {["Einkommen", "Vermögen", "Rente", "Hausrat", "Unterhalt"].map((thema) => (
           <label key={thema} style={{ display: "block", marginBottom: "8px" }}>
@@ -101,20 +122,31 @@ ${name}`
           </label>
         ))}
 
+        {/* Kinder */}
         <label style={{ marginTop: "20px" }}>Gibt es Kinder?</label>
-        <select value={kinder} onChange={(e) => setKinder(e.target.value)} style={inputStyle}>
+        <select
+          value={kinder}
+          onChange={(e) => setKinder(e.target.value)}
+          style={inputStyle}
+        >
           <option value="">Bitte auswählen</option>
           <option>Ja</option>
           <option>Nein</option>
         </select>
 
+        {/* Immobilie */}
         <label>Gibt es Immobilien?</label>
-        <select value={immobilie} onChange={(e) => setImmobilie(e.target.value)} style={inputStyle}>
+        <select
+          value={immobilie}
+          onChange={(e) => setImmobilie(e.target.value)}
+          style={inputStyle}
+        >
           <option value="">Bitte auswählen</option>
           <option>Ja</option>
           <option>Nein</option>
         </select>
 
+        {/* Beschreibung */}
         <label>Deine Situation</label>
         <textarea
           value={beschreibung}
@@ -122,23 +154,34 @@ ${name}`
           style={{ ...inputStyle, minHeight: "140px" }}
         />
 
+        {/* CTA */}
         <a
-  href={mailLink}
-  className="cta-button"
-  onClick={() => setSubmitted(true)}
->
-  Anfrage per Mail erstellen
-</a>
+          href={mailLink}
+          className="cta-button"
+          onClick={() => setSubmitted(true)}
+        >
+          Anfrage per Mail erstellen
+        </a>
 
-{submitted && (
-  <p style={{
-    marginTop: "20px",
-    fontSize: "14px",
-    color: "#2f6f57"
-  }}>
-    Vielen Dank. Dein Mailprogramm sollte sich geöffnet haben.
-  </p>
-)}
+        {/* Danke Nachricht */}
+        {submitted && (
+          <p style={{
+            marginTop: "20px",
+            fontSize: "14px",
+            color: "#2f6f57"
+          }}>
+            Vielen Dank. Dein Mailprogramm sollte sich geöffnet haben.
+          </p>
+        )}
+
+        <p style={{
+          marginTop: "20px",
+          fontSize: "13px",
+          color: "#888"
+        }}>
+          Deine Angaben werden nicht automatisch bewertet –
+          sie helfen nur, deine Situation besser einzuordnen.
+        </p>
 
       </div>
     </main>
