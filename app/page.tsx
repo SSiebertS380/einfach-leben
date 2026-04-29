@@ -21,7 +21,7 @@ export default function Page() {
           </p>
 
           <p style={{ color: "#777", fontSize: "18px" }}>
-            Und plötzlich merkst du: Es geht nicht nur um dein Leben –
+            Und plötzlich merkst Du: Es geht nicht nur um dein Leben –
             sondern auch um dein Geld.
           </p>
 
@@ -47,7 +47,7 @@ export default function Page() {
           </p>
 
           <p style={{ fontSize: "18px", color: "#555", marginTop: "30px" }}>
-            Nicht, weil sie unvernünftig entscheiden. Sondern weil die finanziellen Wirkungen oft erst später sichtbar werden.
+            Nicht, weil Sie unvernünftig entscheiden. Sondern weil die finanziellen Wirkungen oft erst später sichtbar werden.
           </p>
         </div>
       </section>
@@ -110,12 +110,12 @@ export default function Page() {
           <div style={{ display: "grid", gap: "26px" }}>
             <div>
               <h3>Was passiert mit dem Einkommen?</h3>
-              <p>Wie verändert sich, was dir monatlich wirklich zur Verfügung steht?</p>
+              <p>Wie verändert sich, was Dir monatlich wirklich zur Verfügung steht?</p>
             </div>
 
             <div>
               <h3>Was passiert mit dem Vermögen?</h3>
-              <p>Was wurde gemeinsam aufgebaut – und wie wird es betrachtet?</p>
+              <p>Was war am Anfang schon vorhanden - Was wurde gemeinsam aufgebaut – und wie wird es betrachtet?</p>
             </div>
 
             <div>
@@ -136,48 +136,102 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ZIELGRUPPEN */}
-      <section style={{ padding: "90px 20px" }}>
-        <div style={{ maxWidth: "850px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "34px", fontWeight: 500, marginBottom: "35px", textAlign: "center" }}>
-            Für wen ist das gedacht?
-          </h2>
+{/* ZIELGRUPPEN */}
+<section style={{ padding: "90px 20px", background: "#f7f7f2" }}>
+  <div style={{ maxWidth: "900px", margin: "0 auto" }}>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "30px" }}>
-            <div>
-              <h3>In der Trennung</h3>
-              <p>Für Menschen, die verstehen wollen, was gerade wirkt und welche Fragen jetzt wichtig werden.</p>
-              <a href="mailto:siebert@s380.de?subject=Einordnung%20zur%20Trennung" className="cta-small">
-                Einordnung zur Trennung
-              </a>
-            </div>
+    <h2
+      style={{
+        fontSize: "34px",
+        fontWeight: 500,
+        marginBottom: "20px",
+        textAlign: "center",
+      }}
+    >
+      Für wen ist das gedacht?
+    </h2>
 
-            <div>
-              <h3>Vor der Hochzeit</h3>
-              <p>Für Paare, die verstehen wollen, welche finanziellen Wirkungen mit der Ehe entstehen.</p>
-              <a href="mailto:siebert@s380.de?subject=Einordnung%20zur%20Hochzeit" className="cta-small">
-                Einordnung zur Hochzeit
-              </a>
-            </div>
+    <p
+      style={{
+        textAlign: "center",
+        color: "#555",
+        fontSize: "18px",
+        marginBottom: "60px",
+        maxWidth: "650px",
+        marginLeft: "auto",
+        marginRight: "auto",
+      }}
+    >
+      Je nach Situation stellen sich unterschiedliche Fragen.
+      Hier kannst du direkt dort ansetzen, wo du gerade stehst.
+    </p>
 
-            <div>
-              <h3>In der Ehe</h3>
-              <p>Für Menschen, die gemeinsame Entscheidungen bewusster einordnen wollen.</p>
-              <a href="mailto:siebert@s380.de?subject=Einordnung%20in%20der%20Ehe" className="cta-small">
-                Entscheidungen einordnen
-              </a>
-            </div>
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr",
+        gap: "30px",
+      }}
+    >
+      {[
+        {
+          title: "In der Trennung",
+          text: "Für Menschen, die verstehen wollen, was gerade wirkt und welche Fragen jetzt wichtig werden.",
+          link: "Einordnung zur Trennung",
+          subject: "Einordnung zur Trennung",
+        },
+        {
+          title: "Vor der Hochzeit",
+          text: "Für Paare, die verstehen wollen, welche finanziellen Wirkungen mit der Ehe entstehen.",
+          link: "Einordnung zur Hochzeit",
+          subject: "Einordnung zur Hochzeit",
+        },
+        {
+          title: "In der Ehe",
+          text: "Für Menschen, die gemeinsame Entscheidungen bewusster einordnen wollen.",
+          link: "Entscheidungen einordnen",
+          subject: "Einordnung in der Ehe",
+        },
+        {
+          title: "Als Geschenk",
+          text: "Für Freunde oder Familie, die einem Paar etwas Sinnvolles zur Hochzeit mitgeben möchten.",
+          link: "Als Geschenk anfragen",
+          subject: "Einordnung als Geschenk",
+        },
+      ].map((item, i) => (
+        <div
+          key={i}
+          style={{
+            padding: "25px",
+            borderRadius: "10px",
+            border: "1px solid #e0e0da",
+            background: "#fff",
+          }}
+        >
+          <h3
+            style={{
+              fontWeight: 700,
+              marginBottom: "10px",
+              fontSize: "18px",
+            }}
+          >
+            {item.title}
+          </h3>
 
-            <div>
-              <h3>Als Geschenk</h3>
-              <p>Für Freunde oder Familie, die einem Paar etwas Sinnvolles zur Hochzeit mitgeben möchten.</p>
-              <a href="mailto:siebert@s380.de?subject=Anfrage%20als%20Geschenk" className="cta-small">
-                Als Geschenk anfragen
-              </a>
-            </div>
-          </div>
+          <p style={{ marginBottom: "15px" }}>{item.text}</p>
+
+          <a
+            href={`mailto:siebert@s380.de?subject=${encodeURIComponent(item.subject)}`}
+            className="cta-small"
+          >
+            {item.link}
+          </a>
         </div>
-      </section>
+      ))}
+    </div>
+
+  </div>
+</section>
 
       {/* ABLAUF */}
       <section style={{ padding: "90px 20px", background: "#f7f7f2" }}>
@@ -187,12 +241,12 @@ export default function Page() {
           </h2>
 
           <p>Du schilderst kurz deine Situation.</p>
-          <p>Ich gebe dir eine erste strukturierte Einordnung:</p>
+          <p>Ich gebe Dir eine erste strukturierte Einordnung:</p>
 
           <ul style={{ marginTop: "20px", marginBottom: "25px", paddingLeft: "22px" }}>
             <li>welche Themen wirklich relevant sind</li>
             <li>wo finanzielle Auswirkungen entstehen können</li>
-            <li>welche Fragen du als Nächstes klären solltest</li>
+            <li>welche Fragen Du als Nächstes klären solltest</li>
           </ul>
 
           <p>
