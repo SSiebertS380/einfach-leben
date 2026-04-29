@@ -125,6 +125,15 @@ export default function Page() {
     {item.text}
   </p>
 
+  {/* Divider (nicht beim letzten Element) */}
+  {i < 3 && (
+    <div style={{
+      marginTop: "20px",
+      height: "1px",
+      background: "#e5e5e0"
+    }} />
+  )}
+
 </div>
       ))}
 
