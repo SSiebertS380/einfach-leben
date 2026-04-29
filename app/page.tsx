@@ -80,10 +80,10 @@ export default function Page() {
     <div className="timeline-grid">
 
       {[
-        { img: "phase1.jpg", nr: "01", title: "Anfang", text: "Alles fühlt sich klar an." },
-        { img: "phase2.jpg", nr: "02", title: "Aufbau", text: "Man baut gemeinsam etwas auf." },
-        { img: "phase3.jpg", nr: "03", title: "Veränderung", text: "Fragen entstehen oft leise." },
-        { img: "phase4.jpg", nr: "04", title: "Klärung", text: "Und plötzlich wird es konkret." },
+        { nr: "I", title: "Anfang", text: "Alles fühlt sich klar an.", img: "phase1.jpg" },
+        { img: "phase2.jpg", nr: "II", title: "Aufbau", text: "Gemeinsam etwas aufbauen." },
+        { img: "phase3.jpg", nr: "III", title: "Veränderung", text: "Fragen entstehen oft leise." },
+        { img: "phase4.jpg", nr: "IV", title: "Klärung", text: "Und plötzlich wird es konkret." },
       ].map((item, i) => (
         <div key={i}>
           <img
