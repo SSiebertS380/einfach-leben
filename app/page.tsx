@@ -29,7 +29,7 @@ export default function Page() {
             Es beginnt oft leise.
           </p>
 
-          <a href="mailto:siebert@s380.de?subject=Erste%20Einordnung" className="cta-button">
+          <a href="/anfrage" className="cta-button">
             Erste Einordnung anfragen
           </a>
 
@@ -233,25 +233,25 @@ export default function Page() {
           title: "In der Trennung",
           text: "Für Menschen, die verstehen wollen, was gerade wirkt und welche Fragen jetzt wichtig werden.",
           link: "Einordnung zur Trennung",
-          subject: "Einordnung zur Trennung",
+          situation: "Trennung",
         },
         {
           title: "Vor der Hochzeit",
           text: "Für Paare, die verstehen wollen, welche finanziellen Wirkungen mit der Ehe entstehen.",
           link: "Einordnung zur Hochzeit",
-          subject: "Einordnung zur Hochzeit",
+          situation: "Hochzeit",
         },
         {
           title: "In der Ehe",
           text: "Für Menschen, die gemeinsame Entscheidungen bewusster einordnen wollen.",
           link: "Entscheidungen einordnen",
-          subject: "Einordnung in der Ehe",
+          situation: "Ehe",
         },
         {
           title: "Als Geschenk",
           text: "Für Freunde oder Familie, die einem Paar etwas Sinnvolles zur Hochzeit mitgeben möchten.",
           link: "Als Geschenk anfragen",
-          subject: "Einordnung als Geschenk",
+          situation: "Geschenk",
         },
       ].map((item, i) => (
         <div
@@ -276,7 +276,7 @@ export default function Page() {
           <p style={{ marginBottom: "15px" }}>{item.text}</p>
 
           <a
-            href={`mailto:siebert@s380.de?subject=${encodeURIComponent(item.subject)}`}
+            href={`/anfrage?situation=${encodeURIComponent(item.situation)}`}
             className="cta-small"
           >
             {item.link}
@@ -325,18 +325,18 @@ export default function Page() {
       Du bekommst eine erste klare Einordnung deiner Situation.
     </p>
 
-    <a
-      href="mailto:siebert@s380.de?subject=Erste%20Einordnung"
-      className="cta-button"
-      style={{
-        marginTop: "70px",
-        width: "100%",
-        maxWidth: "420px",
-        boxSizing: "border-box"
-      }}
-    >
-      Erste Einordnung per Mail anfragen
-    </a>
+<a
+  href="/anfrage"
+  className="cta-button"
+  style={{
+    marginTop: "70px",
+    width: "100%",
+    maxWidth: "420px",
+    boxSizing: "border-box"
+  }}
+>
+  Anfrage starten
+</a>
 
     <p style={{ marginTop: "12px", fontSize: "14px", color: "#888" }}>
       Antwort innerhalb von 24 Stunden · unverbindlich
