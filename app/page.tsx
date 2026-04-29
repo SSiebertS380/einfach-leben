@@ -311,36 +311,44 @@ export default function Page() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section style={{ padding: "120px 20px", background: "#222", color: "#f5f5f5", textAlign: "center" }}>
-        <div style={{ maxWidth: "700px", margin: "0 auto" }}>
-          <h2 style={{ marginBottom: "25px", fontSize: "32px", fontWeight: 500, lineHeight: 1.3 }}>
-            Finde heraus, welche dieser Fragen{" "}
-            <span style={{ color: "#7fd1a8", fontWeight: 600 }}>wirklich</span>
-            <br />
-            für dich relevant sind
-          </h2>
+{/* CTA */}
+<section style={{ padding: "120px 20px", background: "#222", color: "#f5f5f5", textAlign: "center" }}>
+  <div style={{ maxWidth: "700px", margin: "0 auto" }}>
+    <h2 style={{ marginBottom: "25px", fontSize: "32px", fontWeight: 500, lineHeight: 1.3 }}>
+      Finde heraus, welche dieser Fragen{" "}
+      <span style={{ color: "#7fd1a8", fontWeight: 600 }}>wirklich</span>
+      <br />
+      für dich relevant sind
+    </h2>
 
-          <p style={{ marginBottom: "40px", color: "#ddd", fontSize: "18px" }}>
-            Du bekommst eine erste persönliche Einordnung zu deiner Situation –
-            und siehst, welche Themen du jetzt klären solltest.
-          </p>
+    <p style={{ marginBottom: "50px", color: "#ddd", fontSize: "18px" }}>
+      Du bekommst eine erste klare Einordnung deiner Situation.
+    </p>
 
-          <a href="mailto:siebert@s380.de?subject=Erste%20Einordnung" className="cta-button">
-            Erste Einordnung per Mail anfragen
-          </a>
+    <a
+      href="mailto:siebert@s380.de?subject=Erste%20Einordnung"
+      className="cta-button"
+      style={{
+        marginTop: "70px",
+        width: "100%",
+        maxWidth: "420px",
+        boxSizing: "border-box"
+      }}
+    >
+      Erste Einordnung per Mail anfragen
+    </a>
 
-          <p style={{ marginTop: "12px", fontSize: "14px", color: "#888" }}>
-            Antwort innerhalb von 24 Stunden · unverbindlich
-          </p>
+    <p style={{ marginTop: "12px", fontSize: "14px", color: "#888" }}>
+      Antwort innerhalb von 24 Stunden · unverbindlich
+    </p>
 
-          <p style={{ marginTop: "15px", fontSize: "13px", color: "#888", lineHeight: 1.5 }}>
-            Keine rechtliche oder steuerliche Beratung – sondern eine Einordnung aus Erfahrung.
-            Ich arbeite neutral und begleite auf Wunsch auch beide Seiten im Gespräch.
-          </p>
-        </div>
-      </section>
-
+    <p style={{ marginTop: "15px", fontSize: "13px", color: "#888", lineHeight: 1.5 }}>
+      Keine rechtliche oder steuerliche Beratung – sondern eine Einordnung aus Erfahrung.
+      Ich arbeite neutral und begleite auf Wunsch auch beide Seiten im Gespräch.
+    </p>
+  </div>
+</section>
+      
       {/* ABSCHLUSS */}
       <section style={{ padding: "100px 20px", textAlign: "center", background: "#f7f7f2" }}>
         <div style={{ maxWidth: "700px", margin: "0 auto" }}>
