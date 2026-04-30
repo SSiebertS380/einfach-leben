@@ -216,7 +216,7 @@ export default function Page() {
         {
           title: "Unterhalt & Verantwortung",
           text: "Welche Verpflichtungen entstehen – und wie wirken sie sich auf beide Seiten aus?"
-        }
+        },
 
         {
           title: "Kommunikation",
