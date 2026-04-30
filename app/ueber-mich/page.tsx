@@ -15,6 +15,18 @@ export default function UeberMich() {
     <main style={{ padding: "100px 20px", fontFamily: "Georgia, serif" }}>
       <div style={{ maxWidth: "760px", margin: "0 auto" }}>
 
+      <a
+          href="/"
+          style={{
+            display: "inline-block",
+            marginBottom: "30px",
+            color: "#2f6f57",
+            textDecoration: "none",
+          }}
+        >
+          ← zurück
+        </a>
+
         <h1 style={{ marginBottom: "30px" }}>
           Über mich
         </h1>
@@ -48,16 +60,11 @@ export default function UeberMich() {
 
         <p style={paragraphStyle}>
           Seit über 20 Jahren beschäftige ich mich mit finanziellen Entscheidungen –
-          insbesondere im Immobilienbereich. Immobilien, Kapitalmärkte, Finanzierung,
-          Vermögenswerte und langfristige Verpflichtungen sind für mich nicht nur Theorie,
-          sondern seit vielen Jahren Teil meines beruflichen Alltags.
-        </p>
-
-        <p style={paragraphStyle}>
-          Ich war bei einem der Big-Four-Immobilienberatungsunternehmen tätig und habe im
-          Bereich <strong>Capital Markets / Industrial Investment</strong>{" "}
-          Immobilientransaktionen begleitet – von etwa <strong>5 Millionen Euro</strong>{" "}
-          bis hin zu <strong>1 Milliarde Euro</strong>.
+          insbesondere im Immobilienbereich. Ich war bei einem der großen internationalen
+          Immobilienberatungsunternehmen tätig und habe im Bereich{" "}
+          <strong>Capital Markets / Industrial Investment</strong>{" "}
+          Transaktionen von etwa <strong>5 Millionen Euro</strong> bis hin zu{" "}
+          <strong>1 Milliarde Euro</strong> begleitet.
         </p>
 
         <p style={paragraphStyle}>
@@ -69,15 +76,14 @@ export default function UeberMich() {
 
         <p style={paragraphStyle}>
           Auch heute bin ich weiterhin im Immobilienbereich tätig. Genau diese Erfahrung
-          aus professionellen Finanz- und Immobilienentscheidungen möchte ich nebenberuflich
-          weitergeben – an Menschen, die privat vor Entscheidungen stehen, die langfristige
-          finanzielle Wirkung haben können.
+          aus professionellen Finanz-, Vermögens- und Entscheidungsstrukturen möchte ich
+          nebenberuflich weitergeben – an Menschen, die privat vor Entscheidungen stehen,
+          deren Wirkung sie oft erst viel später wirklich erkennen.
         </p>
 
         <p style={paragraphStyle}>
-          Ich kenne Zahlen. Ich kenne Verträge. Ich kenne Risiken. Ich kenne komplexe
-          Strukturen. Und ich weiß, wie wichtig es ist, Entscheidungen nicht nur emotional,
-          sondern auch mit klarem Blick auf die Folgen zu treffen.
+          Ich kannte Zahlen. Ich kannte Verträge. Ich kannte Risiken.
+          Ich kannte komplexe Strukturen.
         </p>
 
         <p style={{
@@ -95,34 +101,27 @@ export default function UeberMich() {
         </h2>
 
         <p style={paragraphStyle}>
-          Irgendwann kam die Hochzeit. Zwei Kinder. Ein Haus. Der Umbau.
-          Der Gedanke: Jetzt läuft mein Leben auch privat so, wie ich es mir
-          vorgestellt hatte.
+          Hochzeit, zwei Kinder, ein Haus, Umbau, Karriere. Ich dachte:
+          Jetzt läuft mein Leben auch privat so, wie ich es mir vorgestellt hatte.
         </p>
 
         <p style={paragraphStyle}>
-          Beruflich ging es weiter. Ein neuer Job, ein Teamaufbau in Deutschland,
-          viel Verantwortung. Unsere Töchter wurden größer, Kindergarten, Alltag,
-          Corona – und während außen vieles funktionierte, hatten wir uns als Paar
-          verloren.
+          Dann kamen ein neuer Job, viel Verantwortung, Kindergarten, Alltag, Corona –
+          und irgendwann die Erkenntnis, dass wir uns als Paar verloren hatten.
+          Plötzlich war sie da: die Trennung.
         </p>
 
         <p style={paragraphStyle}>
-          Dann war sie plötzlich da: die Trennung.
-        </p>
-
-        <p style={paragraphStyle}>
-          Was folgte, war nicht nur emotional schwer, sondern auch finanziell und
-          organisatorisch überwältigend. Schreiben vom Anwalt. Der Auszug aus dem Haus.
-          Kein vertrauter Hausrat mehr. Kein Auto. Ein 1-Zimmer-Appartement.
-          Unterhaltszahlungen. Die Raten für das Haus. Anwaltsrechnungen.
-          Später auch Arbeitslosigkeit.
+          Was folgte, war emotional, finanziell und organisatorisch überwältigend:
+          Anwaltsschreiben, Auszug aus dem Haus, kein vertrauter Hausrat mehr,
+          kein Auto, ein 1-Zimmer-Appartement, Unterhaltszahlungen, Hausraten,
+          Anwaltsrechnungen und später auch Arbeitslosigkeit.
         </p>
 
         <p style={paragraphStyle}>
           Auf einmal ging es nicht mehr um Lebensplanung, sondern ums Durchhalten.
           Und gleichzeitig musste ich verstehen, was aus gemeinsamen Entscheidungen,
-          gemeinsamen Verpflichtungen und gemeinsamen Vermögenswerten geworden war.
+          gemeinsamen Verpflichtungen und gemeinsamer Verantwortung geworden war.
         </p>
 
         <p style={paragraphStyle}>
@@ -152,44 +151,49 @@ export default function UeberMich() {
           marginBottom: "30px"
         }}>
           Hätte ich vorher wirklich verstanden, was Ehe bedeutet – nicht romantisch,
-          sondern rechtlich, finanziell und praktisch –, hätte ich vieles anders gemacht.
+          sondern rechtlich, finanziell und praktisch –, hätte ich vieles bewusster
+          entschieden.
         </p>
 
         <p style={paragraphStyle}>
-          Nicht gegen die Ehe. Sondern bewusster. Klarer. Mit mehr Kommunikation.
-          Mit einem besseren Verständnis dafür, wie aus „meins“ plötzlich „unseres“ wird –
-          und was das im Ernstfall bedeuten kann.
+          Nicht gegen die Ehe. Sondern mit mehr Klarheit. Mit mehr Kommunikation.
+          Und mit einem besseren Verständnis dafür, dass Ehe nicht nur ein persönliches
+          Versprechen ist, sondern auch ein gesetzlicher Rahmen.
         </p>
 
         <p style={paragraphStyle}>
-          Das Absurde ist: Für einen einfachen Fondssparplan bekomme ich mehrere Seiten
-          Risikohinweise. Mir wird erklärt, dass im schlimmsten Fall mein eingesetztes
-          Kapital weg sein kann.
+          Dieser Rahmen ist nicht persönlich gemeint. Er ist kein Angriff, kein Misstrauen
+          und keine Frage von Schuld. Er folgt schlicht einer gesetzlichen Vorstellung davon,
+          wie Verantwortung, Einkommen, Vermögen und Verpflichtungen zwischen zwei Menschen
+          eingeordnet werden.
         </p>
 
         <p style={paragraphStyle}>
-          Aber bei Ehe, Hauskauf, Kindern, gemeinsamen Verpflichtungen und Vermögensaufbau
-          wird oft einfach vorausgesetzt, dass man schon weiß, was man tut.
+          Genau das sollte man verstehen, bevor man weitreichende Entscheidungen trifft –
+          oder wenn bereits eine Situation entstanden ist, die sich unübersichtlich anfühlt.
         </p>
 
         <p style={paragraphStyle}>
-          Genau das ist häufig nicht der Fall.
+          Für einen einfachen Fondssparplan bekommt man mehrere Seiten Risikohinweise.
+          Bei Ehe, Kindern, Vermögen und gemeinsamen Verpflichtungen wird dagegen oft
+          vorausgesetzt, dass man schon weiß, was man tut.
         </p>
 
         <h2 style={sectionTitleStyle}>
-          Warum ich diese Erfahrung weitergebe
+          Warum diese Seite entstanden ist
         </h2>
 
         <p style={paragraphStyle}>
-          Diese Erfahrung hat meinen Blick verändert. Sie hat mir gezeigt, dass finanzielle
-          Klarheit nicht nur bei großen Immobilientransaktionen wichtig ist, sondern gerade
-          auch im privaten Leben.
+          In der letzten Zeit kamen immer häufiger Menschen aus meinem Umfeld mit genau
+          solchen Fragen auf mich zu: Was bedeutet Ehe eigentlich? Was verändert sich
+          dadurch? Was ist wirklich gemeinsam? Welche Verantwortung entsteht? Und warum
+          hat einem das vorher niemand in Ruhe erklärt?
         </p>
 
         <p style={paragraphStyle}>
-          Deshalb gebe ich meine Erfahrung heute nebenberuflich weiter. Nicht als klassische
-          Beratung von außen, sondern als persönliche Einordnung aus beruflicher Erfahrung
-          und eigener Geschichte.
+          Aus diesen Gesprächen ist diese Seite entstanden. Nicht als große Beratungsplattform,
+          sondern als Möglichkeit, meine berufliche Erfahrung und meine persönliche Geschichte
+          dort weiterzugeben, wo sie anderen helfen kann.
         </p>
 
         <p style={paragraphStyle}>
@@ -200,9 +204,8 @@ export default function UeberMich() {
 
         <p style={paragraphStyle}>
           Dabei geht es nicht darum, jemandem zu sagen, was er tun muss. Es geht darum,
-          Zusammenhänge sichtbar zu machen, finanzielle Folgen verständlicher einzuordnen
-          und wieder Struktur in eine Situation zu bringen, die sich vielleicht gerade
-          unübersichtlich anfühlt.
+          Zusammenhänge sichtbar zu machen, Folgen verständlicher einzuordnen und wieder
+          Struktur in eine Situation zu bringen, die sich gerade unübersichtlich anfühlt.
         </p>
 
         <p style={paragraphStyle}>
@@ -241,47 +244,48 @@ export default function UeberMich() {
           color: "#555",
           lineHeight: 1.6
         }}>
-          Sondern, dass man versteht, was gerade wirkt. Dass man erkennt, welche Verantwortung
-          wirklich die eigene ist – und welche man nicht dauerhaft im eigenen Rucksack tragen muss.
-          Dadurch wird es wieder möglich, klar und bewusst zu entscheiden.
+          Sondern, dass man versteht, was gerade wirkt. Dass man erkennt,
+          welche Verantwortung wirklich die eigene ist – und welche man nicht
+          dauerhaft im eigenen Rucksack tragen muss. Dadurch wird es wieder möglich,
+          klar und bewusst zu entscheiden.
         </p>
 
-      </div>
-
-      <div style={{
-        marginTop: "70px",
-        textAlign: "center"
-      }}>
-
-        <p style={{
-          fontSize: "18px",
-          marginBottom: "20px",
-          lineHeight: 1.5
+        <div style={{
+          marginTop: "70px",
+          textAlign: "center"
         }}>
-          Wenn du deine Situation einordnen möchtest,
-          kannst du mir gerne schreiben.
-        </p>
 
-      <a
-  href="/anfrage"
-  className="cta-button"
-  style={{
-    marginTop: "70px",
-    width: "100%",
-    maxWidth: "420px",
-    boxSizing: "border-box"
-  }}
->
-  Anfrage starten
-</a>
+          <p style={{
+            fontSize: "18px",
+            marginBottom: "20px",
+            lineHeight: 1.5
+          }}>
+            Wenn du deine Situation einordnen möchtest,
+            kannst du gerne eine Anfrage starten.
+          </p>
 
-        <p style={{
-          marginTop: "12px",
-          fontSize: "14px",
-          color: "#888"
-        }}>
-          unverbindlich · vertraulich
-        </p>
+          <a
+            href="/anfrage"
+            className="cta-button"
+            style={{
+              marginTop: "70px",
+              width: "100%",
+              maxWidth: "420px",
+              boxSizing: "border-box"
+            }}
+          >
+            Anfrage starten
+          </a>
+
+          <p style={{
+            marginTop: "12px",
+            fontSize: "14px",
+            color: "#888"
+          }}>
+            unverbindlich · vertraulich
+          </p>
+
+        </div>
 
       </div>
     </main>
