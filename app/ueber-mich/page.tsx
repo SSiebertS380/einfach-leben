@@ -63,8 +63,7 @@ export default function UeberMich() {
           insbesondere im Immobilienbereich. Ich war bei einem der großen internationalen
           Immobilienberatungsunternehmen tätig und habe im Bereich{" "}
           <strong>Capital Markets / Industrial Investment</strong>{" "}
-          Transaktionen von etwa <strong>5 Millionen Euro</strong> bis hin zu{" "}
-          <strong>1 Milliarde Euro</strong> begleitet.
+          Transaktionen begleitet.
         </p>
 
         <p style={paragraphStyle}>

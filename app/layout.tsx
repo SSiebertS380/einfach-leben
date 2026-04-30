@@ -32,18 +32,10 @@ export default function RootLayout({
             background: "white",
           }}
         >
-          {/* LINKS: HOME */}
-          <a
-            href="/"
-            style={{
-              fontWeight: "bold",
-              fontSize: "18px",
-              textDecoration: "none",
-              color: "#111",
-            }}
-          >
-            S380
-          </a>
+  {/* LINKS: LOGO */}
+ <a href="/" className="brand-logo">
+  S380
+</a>
 
           {/* RECHTS: NAV */}
 <div style={{ display: "flex", gap: "20px" }}>

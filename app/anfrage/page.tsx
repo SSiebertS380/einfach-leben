@@ -6,19 +6,22 @@ export default function Anfrage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [situation, setSituation] = useState("");
+  const [angebot, setAngebot] = useState("");
   const [themen, setThemen] = useState<string[]>([]);
   const [kinder, setKinder] = useState("");
   const [immobilie, setImmobilie] = useState("");
   const [beschreibung, setBeschreibung] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
+  // 👉 URL Parameter auslesen (situation + angebot)
   useEffect(() => {
-    const searchParams = new URLSearchParams(window.location.search);
-    const preset = searchParams.get("situation");
+    const params = new URLSearchParams(window.location.search);
 
-    if (preset) {
-      setSituation(preset);
-    }
+    const presetSituation = params.get("situation");
+    const presetAngebot = params.get("angebot");
+
+    if (presetSituation) setSituation(presetSituation);
+    if (presetAngebot) setAngebot(presetAngebot);
   }, []);
 
   function toggleThema(thema: string) {
@@ -32,12 +35,14 @@ export default function Anfrage() {
   const body = encodeURIComponent(
 `Hallo Steven,
 
-ich möchte eine erste Einordnung zu meiner Situation anfragen.
+ich möchte eine Einordnung zu meiner Situation anfragen.
 
 Name: ${name}
 E-Mail: ${email}
 
 Situation: ${situation}
+Gewähltes Angebot: ${angebot}
+
 Themen: ${themen.join(", ")}
 
 Kinder: ${kinder}
@@ -50,31 +55,46 @@ Viele Grüße
 ${name}`
   );
 
-  const mailLink = `mailto:siebert@s380.de?subject=Erste%20Einordnung&body=${body}`;
+  const mailLink = `mailto:siebert@s380.de?subject=Anfrage%20Einordnung&body=${body}`;
 
   return (
     <main style={{ padding: "100px 20px", fontFamily: "Georgia, serif" }}>
       <div style={{ maxWidth: "700px", margin: "0 auto" }}>
 
+        {/* Zurück */}
         <a
           href="/"
           style={{
             display: "inline-block",
             marginBottom: "30px",
             color: "#2f6f57",
-            textDecoration: "none",
+            textDecoration: "none"
           }}
         >
           ← zurück
         </a>
 
-        <h1 style={{ marginBottom: "30px" }}>Anfrage starten</h1>
+        <h1 style={{ marginBottom: "30px" }}>
+          Anfrage starten
+        </h1>
 
         <p style={{ marginBottom: "40px", color: "#555" }}>
-          Beantworte ein paar Fragen. Daraus entsteht eine strukturierte Anfrage,
-          damit ich deine Situation besser einordnen kann.
+          Beantworte ein paar Fragen. Daraus entsteht eine strukturierte Anfrage.
         </p>
 
+        {/* Anzeige wenn Angebot vorausgewählt */}
+        {angebot && (
+          <p style={{
+            background: "#f0f7f4",
+            padding: "12px",
+            borderRadius: "8px",
+            marginBottom: "20px"
+          }}>
+            Du interessierst dich für: <strong>{angebot}</strong>
+          </p>
+        )}
+
+        {/* Name */}
         <label>Name</label>
         <input
           value={name}
@@ -82,6 +102,7 @@ ${name}`
           style={inputStyle}
         />
 
+        {/* Email */}
         <label>E-Mail</label>
         <input
           value={email}
@@ -89,6 +110,7 @@ ${name}`
           style={inputStyle}
         />
 
+        {/* Situation */}
         <label>Worum geht es?</label>
         <select
           value={situation}
@@ -102,21 +124,23 @@ ${name}`
           <option>Geschenk</option>
         </select>
 
-        <p style={{ marginTop: "30px" }}>Welche Themen betreffen dich?</p>
+        {/* Themen */}
+        <p style={{ marginTop: "30px" }}>
+          Welche Themen betreffen dich?
+        </p>
 
-        {["Einkommen", "Vermögen", "Rente", "Hausrat", "Unterhalt"].map(
-          (thema) => (
-            <label key={thema} style={{ display: "block", marginBottom: "8px" }}>
-              <input
-                type="checkbox"
-                checked={themen.includes(thema)}
-                onChange={() => toggleThema(thema)}
-              />{" "}
-              {thema}
-            </label>
-          )
-        )}
+        {["Einkommen", "Vermögen", "Rente", "Hausrat", "Unterhalt"].map((thema) => (
+          <label key={thema} style={{ display: "block", marginBottom: "8px" }}>
+            <input
+              type="checkbox"
+              checked={themen.includes(thema)}
+              onChange={() => toggleThema(thema)}
+            />{" "}
+            {thema}
+          </label>
+        ))}
 
+        {/* Kinder */}
         <label style={{ marginTop: "20px" }}>Gibt es Kinder?</label>
         <select
           value={kinder}
@@ -128,6 +152,7 @@ ${name}`
           <option>Nein</option>
         </select>
 
+        {/* Immobilie */}
         <label>Gibt es Immobilien?</label>
         <select
           value={immobilie}
@@ -139,6 +164,7 @@ ${name}`
           <option>Nein</option>
         </select>
 
+        {/* Beschreibung */}
         <label>Deine Situation</label>
         <textarea
           value={beschreibung}
@@ -146,6 +172,7 @@ ${name}`
           style={{ ...inputStyle, minHeight: "140px" }}
         />
 
+        {/* CTA */}
         <a
           href={mailLink}
           className="cta-button"
@@ -154,28 +181,26 @@ ${name}`
           Anfrage per Mail erstellen
         </a>
 
+        {/* Danke */}
         {submitted && (
-          <p
-            style={{
-              marginTop: "20px",
-              fontSize: "14px",
-              color: "#2f6f57",
-            }}
-          >
+          <p style={{
+            marginTop: "20px",
+            fontSize: "14px",
+            color: "#2f6f57"
+          }}>
             Vielen Dank. Dein Mailprogramm sollte sich geöffnet haben.
           </p>
         )}
 
-        <p
-          style={{
-            marginTop: "20px",
-            fontSize: "13px",
-            color: "#888",
-          }}
-        >
-          Deine Angaben werden nicht automatisch bewertet – sie helfen nur,
-          deine Situation besser einzuordnen.
+        <p style={{
+          marginTop: "20px",
+          fontSize: "13px",
+          color: "#888"
+        }}>
+          Deine Angaben werden nicht automatisch bewertet –
+          sie helfen nur, deine Situation besser einzuordnen.
         </p>
+
       </div>
     </main>
   );
