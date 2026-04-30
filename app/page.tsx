@@ -217,6 +217,11 @@ export default function Page() {
           title: "Unterhalt & Verantwortung",
           text: "Welche Verpflichtungen entstehen – und wie wirken sie sich auf beide Seiten aus?"
         }
+
+        {
+          title: "Kommunikation",
+          text: "Was ist eine gute Grundlage für Kommunikation – und wie zerstreiten wir uns nicht?"
+        }
       ].map((item, i) => (
         <div
           key={i}

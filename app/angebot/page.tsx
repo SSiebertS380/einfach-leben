@@ -29,6 +29,20 @@ export default function Angebot() {
     <main style={{ padding: "100px 20px", fontFamily: "Georgia, serif" }}>
       <div style={{ maxWidth: "760px", margin: "0 auto" }}>
 
+
+      <a
+          href="/"
+          style={{
+            display: "inline-block",
+            marginBottom: "30px",
+            color: "#2f6f57",
+            textDecoration: "none",
+          }}
+        >
+          ← zurück
+        </a>
+
+        
         <h1 style={{ marginBottom: "30px" }}>
           Angebot
         </h1>
