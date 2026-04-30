@@ -12,7 +12,6 @@ export default function Anfrage() {
   const [beschreibung, setBeschreibung] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  // 👉 URL Parameter auslesen (fix für Vercel Build)
   useEffect(() => {
     const searchParams = new URLSearchParams(window.location.search);
     const preset = searchParams.get("situation");
@@ -57,26 +56,25 @@ ${name}`
     <main style={{ padding: "100px 20px", fontFamily: "Georgia, serif" }}>
       <div style={{ maxWidth: "700px", margin: "0 auto" }}>
 
-        {/* Zurück */}
-        <a href="/" style={{
-          display: "inline-block",
-          marginBottom: "30px",
-          color: "#2f6f57",
-          textDecoration: "none"
-        }}>
+        <a
+          href="/"
+          style={{
+            display: "inline-block",
+            marginBottom: "30px",
+            color: "#2f6f57",
+            textDecoration: "none",
+          }}
+        >
           ← zurück
         </a>
 
-        <h1 style={{ marginBottom: "30px" }}>
-          Anfrage starten
-        </h1>
+        <h1 style={{ marginBottom: "30px" }}>Anfrage starten</h1>
 
         <p style={{ marginBottom: "40px", color: "#555" }}>
           Beantworte ein paar Fragen. Daraus entsteht eine strukturierte Anfrage,
           damit ich deine Situation besser einordnen kann.
         </p>
 
-        {/* Name */}
         <label>Name</label>
         <input
           value={name}
@@ -84,7 +82,6 @@ ${name}`
           style={inputStyle}
         />
 
-        {/* Email */}
         <label>E-Mail</label>
         <input
           value={email}
@@ -92,7 +89,6 @@ ${name}`
           style={inputStyle}
         />
 
-        {/* Situation */}
         <label>Worum geht es?</label>
         <select
           value={situation}
@@ -106,23 +102,21 @@ ${name}`
           <option>Geschenk</option>
         </select>
 
-        {/* Themen */}
-        <p style={{ marginTop: "30px" }}>
-          Welche Themen betreffen dich?
-        </p>
+        <p style={{ marginTop: "30px" }}>Welche Themen betreffen dich?</p>
 
-        {["Einkommen", "Vermögen", "Rente", "Hausrat", "Unterhalt"].map((thema) => (
-          <label key={thema} style={{ display: "block", marginBottom: "8px" }}>
-            <input
-              type="checkbox"
-              checked={themen.includes(thema)}
-              onChange={() => toggleThema(thema)}
-            />{" "}
-            {thema}
-          </label>
-        ))}
+        {["Einkommen", "Vermögen", "Rente", "Hausrat", "Unterhalt"].map(
+          (thema) => (
+            <label key={thema} style={{ display: "block", marginBottom: "8px" }}>
+              <input
+                type="checkbox"
+                checked={themen.includes(thema)}
+                onChange={() => toggleThema(thema)}
+              />{" "}
+              {thema}
+            </label>
+          )
+        )}
 
-        {/* Kinder */}
         <label style={{ marginTop: "20px" }}>Gibt es Kinder?</label>
         <select
           value={kinder}
@@ -134,7 +128,6 @@ ${name}`
           <option>Nein</option>
         </select>
 
-        {/* Immobilie */}
         <label>Gibt es Immobilien?</label>
         <select
           value={immobilie}
@@ -146,7 +139,6 @@ ${name}`
           <option>Nein</option>
         </select>
 
-        {/* Beschreibung */}
         <label>Deine Situation</label>
         <textarea
           value={beschreibung}
@@ -154,7 +146,6 @@ ${name}`
           style={{ ...inputStyle, minHeight: "140px" }}
         />
 
-        {/* CTA */}
         <a
           href={mailLink}
           className="cta-button"
@@ -163,26 +154,28 @@ ${name}`
           Anfrage per Mail erstellen
         </a>
 
-        {/* Danke Nachricht */}
         {submitted && (
-          <p style={{
-            marginTop: "20px",
-            fontSize: "14px",
-            color: "#2f6f57"
-          }}>
+          <p
+            style={{
+              marginTop: "20px",
+              fontSize: "14px",
+              color: "#2f6f57",
+            }}
+          >
             Vielen Dank. Dein Mailprogramm sollte sich geöffnet haben.
           </p>
         )}
 
-        <p style={{
-          marginTop: "20px",
-          fontSize: "13px",
-          color: "#888"
-        }}>
-          Deine Angaben werden nicht automatisch bewertet –
-          sie helfen nur, deine Situation besser einzuordnen.
+        <p
+          style={{
+            marginTop: "20px",
+            fontSize: "13px",
+            color: "#888",
+          }}
+        >
+          Deine Angaben werden nicht automatisch bewertet – sie helfen nur,
+          deine Situation besser einzuordnen.
         </p>
-
       </div>
     </main>
   );

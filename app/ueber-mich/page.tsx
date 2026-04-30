@@ -15,16 +15,6 @@ export default function UeberMich() {
     <main style={{ padding: "100px 20px", fontFamily: "Georgia, serif" }}>
       <div style={{ maxWidth: "760px", margin: "0 auto" }}>
 
-{/* Zurück */}
-        <a href="/" style={{
-          display: "inline-block",
-          marginBottom: "30px",
-          color: "#2f6f57",
-          textDecoration: "none"
-        }}>
-          ← zurück
-        </a>
-
         <h1 style={{ marginBottom: "30px" }}>
           Über mich
         </h1>
@@ -58,14 +48,14 @@ export default function UeberMich() {
 
         <p style={paragraphStyle}>
           Seit über 20 Jahren beschäftige ich mich mit finanziellen Entscheidungen –
-          insbesondere im Bereich Immobilien. Ich habe erlebt, wie aus Verträgen,
-          Finanzierungen, Beteiligungen und Vermögenswerten langfristige Wirkungen
-          entstehen. Beruflich war das viele Jahre mein Alltag.
+          insbesondere im Immobilienbereich. Immobilien, Kapitalmärkte, Finanzierung,
+          Vermögenswerte und langfristige Verpflichtungen sind für mich nicht nur Theorie,
+          sondern seit vielen Jahren Teil meines beruflichen Alltags.
         </p>
 
         <p style={paragraphStyle}>
-          Ich war bei einem der Big-Four-Immobilienberatungsunternehmen tätig und
-          habe im Bereich <strong>Capital Markets / Industrial Investment</strong>{" "}
+          Ich war bei einem der Big-Four-Immobilienberatungsunternehmen tätig und habe im
+          Bereich <strong>Capital Markets / Industrial Investment</strong>{" "}
           Immobilientransaktionen begleitet – von etwa <strong>5 Millionen Euro</strong>{" "}
           bis hin zu <strong>1 Milliarde Euro</strong>.
         </p>
@@ -78,8 +68,16 @@ export default function UeberMich() {
         </p>
 
         <p style={paragraphStyle}>
-          Ich kannte also Zahlen. Ich kannte Verträge. Ich kannte Risiken.
-          Ich kannte komplexe Strukturen.
+          Auch heute bin ich weiterhin im Immobilienbereich tätig. Genau diese Erfahrung
+          aus professionellen Finanz- und Immobilienentscheidungen möchte ich nebenberuflich
+          weitergeben – an Menschen, die privat vor Entscheidungen stehen, die langfristige
+          finanzielle Wirkung haben können.
+        </p>
+
+        <p style={paragraphStyle}>
+          Ich kenne Zahlen. Ich kenne Verträge. Ich kenne Risiken. Ich kenne komplexe
+          Strukturen. Und ich weiß, wie wichtig es ist, Entscheidungen nicht nur emotional,
+          sondern auch mit klarem Blick auf die Folgen zu treffen.
         </p>
 
         <p style={{
@@ -123,6 +121,8 @@ export default function UeberMich() {
 
         <p style={paragraphStyle}>
           Auf einmal ging es nicht mehr um Lebensplanung, sondern ums Durchhalten.
+          Und gleichzeitig musste ich verstehen, was aus gemeinsamen Entscheidungen,
+          gemeinsamen Verpflichtungen und gemeinsamen Vermögenswerten geworden war.
         </p>
 
         <p style={paragraphStyle}>
@@ -177,12 +177,19 @@ export default function UeberMich() {
         </p>
 
         <h2 style={sectionTitleStyle}>
-          Warum ich heute Menschen begleite
+          Warum ich diese Erfahrung weitergebe
         </h2>
 
         <p style={paragraphStyle}>
-          Diese Erfahrung hat meinen Blick verändert. Und sie hat den Wunsch entstehen
-          lassen, Menschen in genau solchen Situationen zu begleiten.
+          Diese Erfahrung hat meinen Blick verändert. Sie hat mir gezeigt, dass finanzielle
+          Klarheit nicht nur bei großen Immobilientransaktionen wichtig ist, sondern gerade
+          auch im privaten Leben.
+        </p>
+
+        <p style={paragraphStyle}>
+          Deshalb gebe ich meine Erfahrung heute nebenberuflich weiter. Nicht als klassische
+          Beratung von außen, sondern als persönliche Einordnung aus beruflicher Erfahrung
+          und eigener Geschichte.
         </p>
 
         <p style={paragraphStyle}>
@@ -192,15 +199,16 @@ export default function UeberMich() {
         </p>
 
         <p style={paragraphStyle}>
-          Nicht als Anwalt. Nicht als Steuerberater. Sondern als jemand, der finanzielle
-          Strukturen versteht und selbst erlebt hat, wie schnell aus einem geordneten Leben
-          ein unübersichtliches werden kann.
+          Dabei geht es nicht darum, jemandem zu sagen, was er tun muss. Es geht darum,
+          Zusammenhänge sichtbar zu machen, finanzielle Folgen verständlicher einzuordnen
+          und wieder Struktur in eine Situation zu bringen, die sich vielleicht gerade
+          unübersichtlich anfühlt.
         </p>
 
         <p style={paragraphStyle}>
-          Ich arbeite neutral und begleite auf Wunsch auch beide Seiten. Nicht, um Schuld
-          zu verteilen, sondern um Klarheit zu schaffen. Denn Klarheit ist oft der erste
-          Schritt, damit Gespräche wieder möglich werden.
+          Auf Wunsch begleite ich auch beide Seiten. Neutral, ruhig und mit dem Ziel,
+          dass Gespräche wieder möglich werden. Nicht, um Schuld zu verteilen, sondern
+          um Klarheit zu schaffen.
         </p>
 
         <p style={paragraphStyle}>
@@ -215,8 +223,8 @@ export default function UeberMich() {
           marginBottom: "60px",
           lineHeight: 1.6
         }}>
-          Keine rechtliche oder steuerliche Beratung – sondern eine Einordnung aus Erfahrung
-          und mit finanziellem Blick.
+          Keine rechtliche oder steuerliche Beratung – sondern eine strukturierte
+          Einordnung aus Erfahrung und mit finanziellem Blick.
         </p>
 
         <p style={{
@@ -254,7 +262,7 @@ export default function UeberMich() {
           kannst du mir gerne schreiben.
         </p>
 
-        <a
+      <a
   href="/anfrage"
   className="cta-button"
   style={{

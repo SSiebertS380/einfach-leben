@@ -55,8 +55,8 @@ export default function RootLayout({
     Über mich
   </a>
 
-  <a href="/kontakt" style={{ textDecoration: "none", color: "#111" }}>
-    Kontakt
+  <a href="/angebot" style={{ textDecoration: "none", color: "#111" }}>
+    Angebot
   </a>
 </div>
         </nav>
