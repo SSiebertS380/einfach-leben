@@ -1,5 +1,6 @@
 export default function Page() {
   const accent = "#2f6f57";
+const warm = "#f7f7f2";
 
   return (
     <main style={{ fontFamily: "Georgia, serif", lineHeight: 1.6, color: "#111" }}>
@@ -20,17 +21,13 @@ export default function Page() {
             Bis ein Moment alles verändert.
           </p>
 
-          <p style={{ color: "#777", fontSize: "18px" }}>
+          <p style={{ color: "#777", fontSize: "18px", marginBottom: "40px" }}>
             Und plötzlich merkst Du: Es geht nicht nur um dein Leben –
             sondern auch um dein Geld.
           </p>
 
-          <p style={{ marginTop: "40px", fontSize: "20px", fontStyle: "italic", color: accent }}>
-            Es beginnt oft leise.
-          </p>
-
           <a href="/anfrage" className="cta-button">
-            Erste Einordnung anfragen
+            Meine Situation einordnen
           </a>
 
           <p style={{ marginTop: "15px", fontSize: "14px", color: "#888" }}>
@@ -40,7 +37,7 @@ export default function Page() {
       </section>
 
       {/* THESE */}
-      <section style={{ padding: "80px 20px" }}>
+      <section style={{ padding: "90px 20px", background: warm }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>
           <p style={{ fontSize: "28px", lineHeight: 1.35 }}>
             Die meisten Menschen verstehen nicht, was Entscheidungen wie Heirat oder Trennung wirklich auslösen.
@@ -53,7 +50,7 @@ export default function Page() {
       </section>
 
 {/* LEBENSPHASEN / ZEITSTRAHL */}
-<section style={{ padding: "90px 20px", background: "#f7f7f2" }}>
+<section style={{ padding: "90px 20px" }}>
   <div style={{ maxWidth: "950px", margin: "0 auto" }}>
 
     <h2 style={{
@@ -142,17 +139,20 @@ export default function Page() {
   </div>
 </section>
 
-      {/* ERKLÄRUNG */}
-      <section style={{ padding: "80px 20px" }}>
-        <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p>Die Ehe beginnt mit Nähe, Vertrauen und dem Wunsch nach einem gemeinsamen Leben.</p>
-          <p>Aber sie ist auch eine der weitreichendsten Entscheidungen überhaupt.</p>
-          <p>Einkommen, Vermögen, Verantwortung und Zukunft sind plötzlich miteinander verbunden.</p>
-        </div>
-      </section>
+     {/* ERKLÄRUNG */}
+<section style={{ padding: "90px 20px", background: warm }}>
+  <div style={{ maxWidth: "720px", margin: "0 auto" }}>
+
+    <p style={{ fontSize: "20px", lineHeight: 1.5 }}>
+      Die Ehe ist nicht nur eine persönliche Entscheidung.
+      Sie verändert, wie Einkommen, Vermögen und Verantwortung rechtlich eingeordnet werden.
+    </p>
+
+  </div>
+</section>
 
       {/* KONKRET */}
-<section style={{ padding: "90px 20px", background: "#f7f7f2" }}>
+<section style={{ padding: "90px 20px" }}>
   <div style={{ maxWidth: "900px", margin: "0 auto" }}>
 
     <h2 style={{
@@ -190,11 +190,7 @@ export default function Page() {
       Mit der Ehe wird aus „dein“ plötzlich „euer“.
     </p>
 
-    <div style={{
-      display: "grid",
-      gridTemplateColumns: "1fr 1fr",
-      gap: "25px"
-    }}>
+  <div className="target-grid">
 
       {[
         {
@@ -258,7 +254,7 @@ export default function Page() {
 </section>
 
 {/* ZIELGRUPPEN */}
-<section style={{ padding: "90px 20px", background: "#f7f7f2" }}>
+<section style={{ padding: "90px 20px", background: warm }}>
   <div style={{ maxWidth: "900px", margin: "0 auto" }}>
 
     <h2
@@ -287,13 +283,8 @@ export default function Page() {
       Hier kannst du direkt dort ansetzen, wo du gerade stehst.
     </p>
 
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        gap: "30px",
-      }}
-    >
+   <div className="target-grid">
+
       {[
         {
           title: "In der Trennung",
@@ -354,58 +345,32 @@ export default function Page() {
   </div>
 </section>
 
-      {/* ABLAUF */}
-      <section style={{ padding: "90px 20px", background: "#f7f7f2" }}>
-        <div style={{ maxWidth: "700px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "34px", fontWeight: 500, marginBottom: "25px", lineHeight: 1.3 }}>
-            Wie es weitergeht
-          </h2>
-
-          <p>Du schilderst kurz deine Situation.</p>
-          <p>Ich gebe Dir eine erste strukturierte Einordnung:</p>
-
-          <ul style={{ marginTop: "20px", marginBottom: "25px", paddingLeft: "22px" }}>
-            <li>Welche Themen wirklich relevant sind</li>
-            <li>Wo finanzielle Auswirkungen entstehen können</li>
-            <li>Welche Fragen Du als Nächstes klären solltest</li>
-          </ul>
-
-          <p>
-            Auf Wunsch klären wir das anschließend gemeinsam im Gespräch –
-            neutral, ruhig und mit Blick auf beide Seiten.
-          </p>
-        </div>
-      </section>
-
 {/* CTA */}
 <section style={{ padding: "120px 20px", background: "#222", color: "#f5f5f5", textAlign: "center" }}>
   <div style={{ maxWidth: "700px", margin: "0 auto" }}>
     <h2 style={{ marginBottom: "25px", fontSize: "32px", fontWeight: 500, lineHeight: 1.3 }}>
-      Finde heraus, welche dieser Fragen{" "}
-      <span style={{ color: "#7fd1a8", fontWeight: 600 }}>wirklich</span>
-      <br />
-      für dich relevant sind
+      Klarheit beginnt mit dem ersten Schritt
     </h2>
 
     <p style={{ marginBottom: "50px", color: "#ddd", fontSize: "18px" }}>
-      Du bekommst eine erste klare Einordnung deiner Situation.
+      Finde heraus, welche Themen für dich wirklich wichtig sind.
     </p>
 
-<a
-  href="/anfrage"
-  className="cta-button"
-  style={{
-    marginTop: "70px",
-    width: "100%",
-    maxWidth: "420px",
-    boxSizing: "border-box"
-  }}
->
-  Anfrage starten
-</a>
+    <a
+      href="/anfrage"
+      className="cta-button"
+      style={{
+        marginTop: "70px",
+        width: "100%",
+        maxWidth: "420px",
+        boxSizing: "border-box"
+      }}
+    >
+      Meine Situation einordnen
+    </a>
 
     <p style={{ marginTop: "12px", fontSize: "14px", color: "#888" }}>
-      Antwort innerhalb von 24 Stunden · unverbindlich
+      strukturiert · vertraulich · ohne Druck
     </p>
 
     <p style={{ marginTop: "15px", fontSize: "13px", color: "#888", lineHeight: 1.5 }}>
@@ -414,9 +379,9 @@ export default function Page() {
     </p>
   </div>
 </section>
-      
+
       {/* ABSCHLUSS */}
-      <section style={{ padding: "100px 20px", textAlign: "center", background: "#f7f7f2" }}>
+      <section style={{ padding: "100px 20px", textAlign: "center" }}>
         <div style={{ maxWidth: "700px", margin: "0 auto" }}>
           <img
             src="/images/finale.jpg"
